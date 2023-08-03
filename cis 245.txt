@@ -1,0 +1,26 @@
+# Display a welcome message
+print("Welcome to the Fiber Optic Cable Installation Cost Calculator!")
+
+while True:
+    # Get the company name from the user
+    company_name = input("Please enter your company name: ")
+
+    # Get the number of feet of fiber optic to be installed from the user
+    fiber_optic_feet = float(input("Please enter the number of feet of fiber optic cable to be installed: "))
+
+    # Calculate the total cost based on the number of feet
+    if fiber_optic_feet < 100:
+        total_cost = fiber_optic_feet * 0.87
+    else:
+        total_cost = fiber_optic_feet * 0.70
+
+    # Display the total cost and company name
+    print("\nCompany Name:", company_name)
+    print("Fiber Optic Cable Feet:", fiber_optic_feet)
+    print("Total Cost for Installation: ${:.2f}".format(total_cost))
+
+    # Ask the user if they want to place another order or quit
+    user_choice = input("Do you want to place another order? (yes/no): ").lower()
+    if user_choice = "no":
+        print("Thank you for using our Fiber Optic Cable Installation Cost Calculator. Have a great day!")
+        break
